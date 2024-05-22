@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E4B536A92BFDCFFD00F8812C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E4DE290C2BFDC74800762E31 /* StorybookLoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StorybookLoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DE290F2BFDC74800762E31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4DE29112BFDC74800762E31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		E4DE29032BFDC74800762E31 = {
 			isa = PBXGroup;
 			children = (
+				E4B536A92BFDCFFD00F8812C /* README.md */,
 				E4DE290E2BFDC74800762E31 /* StorybookLoginApp */,
 				E4DE290D2BFDC74800762E31 /* Products */,
 			);
