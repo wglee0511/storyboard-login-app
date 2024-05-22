@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4B536AC2BFDD0A900F8812C /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B536AB2BFDD0A900F8812C /* login.swift */; };
 		E4DE29102BFDC74800762E31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DE290F2BFDC74800762E31 /* AppDelegate.swift */; };
 		E4DE29122BFDC74800762E31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DE29112BFDC74800762E31 /* SceneDelegate.swift */; };
 		E4DE29142BFDC74800762E31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DE29132BFDC74800762E31 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		E4B536A92BFDCFFD00F8812C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E4B536AB2BFDD0A900F8812C /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		E4DE290C2BFDC74800762E31 /* StorybookLoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StorybookLoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DE290F2BFDC74800762E31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4DE29112BFDC74800762E31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,9 +40,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4B536AA2BFDD08500F8812C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E4B536AB2BFDD0A900F8812C /* login.swift */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		E4DE29032BFDC74800762E31 = {
 			isa = PBXGroup;
 			children = (
+				E4B536AA2BFDD08500F8812C /* lib */,
 				E4B536A92BFDCFFD00F8812C /* README.md */,
 				E4DE290E2BFDC74800762E31 /* StorybookLoginApp */,
 				E4DE290D2BFDC74800762E31 /* Products */,
@@ -143,6 +154,7 @@
 				E4DE29142BFDC74800762E31 /* ViewController.swift in Sources */,
 				E4DE29102BFDC74800762E31 /* AppDelegate.swift in Sources */,
 				E4DE29122BFDC74800762E31 /* SceneDelegate.swift in Sources */,
+				E4B536AC2BFDD0A900F8812C /* login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,2 +1,2 @@
-#  Storybook based login app
+#  Storyboard based login app
 
