@@ -22,7 +22,10 @@
                                     <constraint firstAttribute="height" constant="50" id="aRh-2Z-8Y4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="4OX-ee-l2o"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="scY-4d-myW">
                                 <rect key="frame" x="16" y="129" width="361" height="50"/>
@@ -30,7 +33,10 @@
                                     <constraint firstAttribute="height" constant="50" id="i9a-aD-dMB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" textContentType="password"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Z2m-vL-lHU"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일을 입력해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lah-kk-pzS">
                                 <rect key="frame" x="16" y="199" width="361" height="30"/>
