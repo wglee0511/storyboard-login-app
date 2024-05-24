@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var warningLabel: UILabel!
+    @IBOutlet weak var buttonView: UIButton!
     @IBAction func loginButtonAction(_ sender: Any) {
         let email = emailField.text ?? ""
         let password = passwordField.text ?? ""
@@ -52,6 +53,7 @@ class ViewController: UIViewController {
         setTextFieldInitialStyle(textFieldValue: emailField, placeholder: "이메일을 입력해주세요")
         setTextFieldInitialStyle(textFieldValue: passwordField, placeholder: "비밀번호를 입력해주세요")
         
+        buttonView.isEnabled = false
         emailField.becomeFirstResponder()
         // Do any additional setup after loading the view.
     }
@@ -60,6 +62,30 @@ class ViewController: UIViewController {
 }
 
 extension ViewController : UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        var emailValue = emailField.text ?? ""
+        var passwordValue = passwordField.text ?? ""
+        
+        if emailValue == textField.text {
+            guard let rangeValue = Range(range, in: emailValue) else {
+                return true
+            }
+            
+            emailValue = emailValue.replacingCharacters(in: rangeValue, with: string)
+        } else if passwordValue == textField.text {
+            guard let rangeValue = Range(range, in: passwordValue) else {
+                return true
+            }
+            
+            passwordValue = passwordValue.replacingCharacters(in: rangeValue, with: string)
+        }
+        
+        buttonView.isEnabled = !emailValue.isEmpty && !passwordValue.isEmpty
+        
+        return true
+    }
+    
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         switch textField {
         case emailField:
@@ -67,7 +93,7 @@ extension ViewController : UITextFieldDelegate {
             let isValid = (6 ... 12).contains(countText)
             
             textField.layer.borderColor = isValid ? UIColor.systemGray3.cgColor : UIColor.red.cgColor
-            textField.tintColor = .red
+            textField.tintColor = isValid ? .systemGray3 : .red
             
             return isValid
         default:

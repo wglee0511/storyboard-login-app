@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ajg-0b-Sbc">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ajg-0b-Sbc">
                                 <rect key="frame" x="16" y="69" width="361" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="aRh-2Z-8Y4"/>
@@ -27,7 +27,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="4OX-ee-l2o"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="scY-4d-myW">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="scY-4d-myW">
                                 <rect key="frame" x="16" y="129" width="361" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="i9a-aD-dMB"/>
@@ -86,6 +86,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonView" destination="YDI-Zg-ZA0" id="Fb2-1d-Eg0"/>
                         <outlet property="emailField" destination="ajg-0b-Sbc" id="kTT-qy-dgC"/>
                         <outlet property="passwordField" destination="scY-4d-myW" id="F0u-Xq-e1b"/>
                         <outlet property="warningLabel" destination="lah-kk-pzS" id="NrQ-LB-L7h"/>
