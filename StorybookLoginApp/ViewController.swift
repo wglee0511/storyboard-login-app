@@ -16,7 +16,23 @@ class ViewController: UIViewController {
         let email = emailField.text
         let password = passwordField.text
         
+        guard email != nil else {
+            showAlert(message: "이메일을 입력해주세요")
+            return
+        }
         
+        guard password != nil else {
+            showAlert(message: "비밀번호를 입력해주세요")
+            return
+        }
+    }
+    
+    func showAlert(message: String){
+        let alertSheet = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "확인", style: .default)
+        alertSheet.addAction(alertAction)
+        
+        present(alertSheet, animated: true)
     }
     
     override func viewDidLoad() {
